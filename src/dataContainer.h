@@ -12,7 +12,7 @@
 namespace task_scheduling{
 
     /*
-    The order of tasks list and number of processors on input can be any.
+    The order of tasks list and number of processors on input are interchangeable.
     Text file is given as a path to the file in the program arguments.
     */
     class DataContainer{
@@ -20,8 +20,8 @@ namespace task_scheduling{
         // input data, private
         unsigned int m_processorsNumber;
         /*
-        Data here is already sorted by ID started at 0.
-        Position in array is equeal ID of the task.
+        Data here is already sorted by ID starting at 0.
+        Position in array is equal to the ID of the task.
         It is guaranteed to always get the same task by its ID.
         */
         std::vector<Task*> tasks;
