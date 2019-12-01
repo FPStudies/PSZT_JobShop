@@ -8,11 +8,11 @@ using namespace std;
 #include "rand.h"
 
 void setPopulation(Population &population){
-    population.populationSize = 20;
-    population.maxNumberOfGeneration = 100;
-    population.crossoverProb = 500;
-    population.mutationProb = 100;
-    population.numberOfGenerWithoutImprov = 20;
+    population.populationSize = 1000;
+    population.maxNumberOfGeneration = 20000;
+    population.crossoverProb = 550;
+    population.mutationProb = 500;
+    population.numberOfGenerWithoutImprov = 1000;
     population.PCl1 = 350;
     population.PCg1 = 550;
     population.PCl2 = 550;
@@ -31,7 +31,7 @@ using namespace task_scheduling;
 
 int main(int argc, char** argv)
 {
-    cout << "Hello world!" << endl;
+
     #ifdef DEBUG
     cout << "Debug version" << endl;
     #endif
@@ -51,7 +51,6 @@ int main(int argc, char** argv)
 
     population.run(1);
 
-    cout << "Delay sum: " << container.delaySum() << endl;
     cout << "Task chedule: " << endl;
 
     for (unsigned int i = 0; i < container.taskSchedule.size(); ++i){
@@ -61,6 +60,8 @@ int main(int argc, char** argv)
         }
     }
 
+    cout << "Delay sum: " << container.delaySum() << endl;
+    
     /*try{
 
     }
