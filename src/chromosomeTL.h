@@ -16,8 +16,6 @@ namespace task_scheduling{
         ChromosomeTL(const ChromosomeTL* chrom);
 
         std::pair<ChromosomeTL*, ChromosomeTL*> crossover(const ChromosomeTL *chromosome) const;
-
-        //void set(const std::vector<Task*> &taskVector, bool mix = false);
     };
 };
 
