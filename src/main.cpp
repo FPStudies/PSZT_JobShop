@@ -19,11 +19,11 @@ void setPopulation(Population &population){
     population.PCg2 = 750;
     population.PCl12 = 750; //both crosovers boundaries
     population.PCg12 = 950;
-    population.PMl1 = 150;
+    population.PMl1 = 150;  //only task list mutation boundaries
     population.PMg1 = 250;
-    population.PMl2 = 250;
+    population.PMl2 = 250;  //only processor list mutationr boundaries
     population.PMg2 = 400;
-    population.PMl12 = 400;
+    population.PMl12 = 400; //both mutations boundaries
     population.PMg12 = 500;
 }
 
