@@ -22,8 +22,8 @@ namespace task_scheduling{
 
         class Individual{
 
-            ChromosomeTL *tl_m;
-            ChromosomePL *pl_m;
+            ChromosomeTL *tl_m; //Task List
+            ChromosomePL *pl_m; //Processor List
             Population *population;
             unsigned int delay_m;
 
@@ -35,6 +35,7 @@ namespace task_scheduling{
             Individual(const Individual *other);
 
             unsigned int fitness();
+            
             // can return nullptr based on probability
             std::pair<Individual*, Individual*> crossover(const Individual *individual, const unsigned int &probability) const;
             // can do nothing based on probability
