@@ -13,11 +13,11 @@ void setPopulation(Population &population){
     population.crossoverProb = 550;
     population.mutationProb = 500;
     population.numberOfGenerWithoutImprov = 1000;
-    population.PCl1 = 350;
+    population.PCl1 = 350;  //only task list crosover boundaries
     population.PCg1 = 550;
-    population.PCl2 = 550;
+    population.PCl2 = 550;  //only processor list crosover boundaries
     population.PCg2 = 750;
-    population.PCl12 = 750;
+    population.PCl12 = 750; //both crosovers boundaries
     population.PCg12 = 950;
     population.PMl1 = 150;
     population.PMg1 = 250;
