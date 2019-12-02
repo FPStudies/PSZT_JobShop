@@ -48,16 +48,6 @@ Chromosome<ArrayType>::Chromosome(const Chromosome *other)
     #endif
 }
 
-/*template <typename ArrayType>
-ArrayType*& Chromosome<ArrayType>::operator[] (const size_t &pos){
-    return genes[pos];
-}
-
-template <typename ArrayType>
-ArrayType*& Chromosome<ArrayType>::operator[] (const size_t &pos) const{
-    return genes[pos];
-}*/
-
 template <typename ArrayType>
 ArrayType*& Chromosome<ArrayType>::getPointerToGene(const size_t &pos){
     #ifdef DEBUG
@@ -101,30 +91,6 @@ void Chromosome<ArrayType>::mutation(){
     if(tmpPointer1 != this->genes[rand2] || tmpPointer2 != this->genes[rand1]) throw std::runtime_error("Mutation of chromosome failed");
     #endif
 }
-
-/*template <typename ArrayType>
-bool Chromosome<ArrayType>::set(ArrayType **genes, unsigned int &size){
-
-    if(size != chSize) return true;
-
-    for (int i = 0; i < chSize; ++i){
-        this->genes[i] = genes[i];
-    }
-
-    return false;
-}
-
-template <typename ArrayType>
-bool Chromosome<ArrayType>::set(std::vector<ArrayType*> genes){
-
-    if(genes.size() != chSize) return true;
-
-    for (unsigned int i = 0; i < chSize; ++i){
-        this->genes[i] = genes[i];
-    }
-
-    return false;
-}*/
 
 template <typename ArrayType>
 unsigned int Chromosome<ArrayType>::size() const{
