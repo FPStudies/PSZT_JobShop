@@ -353,6 +353,8 @@ Population::Individual *Population::MatingPool::crossover(){
 
             std::pair<Individual*, Individual*> children(pool[choose1]->crossover(pool[choose2], population->crossoverProb));
 
+            if(children.first == nullptr) continue;
+
             if(newGenPos + 1 == population->populationSize){
 
                 mutation(children.first);
