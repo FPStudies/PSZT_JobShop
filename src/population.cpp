@@ -79,7 +79,7 @@ std::pair<Population::Individual*, Population::Individual*> Population::Individu
         ret1->tl_m = TL.first;
         ret2->tl_m = TL.second;
 
-        if(Rand::getClose(0, 2)){
+        if(Rand::getClose(0, 2)){   //chance to "swap" processor lists
             ret1->pl_m = new ChromosomePL(this->pl_m);
             ret2->pl_m = new ChromosomePL(individual->pl_m);
         } else{
@@ -93,7 +93,7 @@ std::pair<Population::Individual*, Population::Individual*> Population::Individu
         ret1->pl_m = PL.first;
         ret2->pl_m = PL.second;
 
-        if(Rand::getClose(0, 2)){
+        if(Rand::getClose(0, 2)){   //chance to "swap" task lists
             ret1->tl_m = new ChromosomeTL(this->tl_m);
             ret2->tl_m = new ChromosomeTL(individual->tl_m);
         } else{
