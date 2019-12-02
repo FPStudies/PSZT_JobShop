@@ -28,31 +28,15 @@ namespace task_scheduling{
         /*
         Get direct access to gene.
         */
-        //ArrayType*& operator[] (const size_t &pos);
-        //ArrayType*& operator[] (const size_t &pos) const;
         ArrayType*& getPointerToGene(const size_t &pos);
         ArrayType*& getPointerToGene(const size_t &pos) const;
 
         /*
-        Create two new chromosomes from this and other chromosome.
-        */
-        /*virtual std::pair<Chromosome<ArrayType>*, Chromosome<ArrayType>*> &crossover(Chromosome<ArrayType> &chromosome, \
-        const float &probability) = 0;*/
-
-        /*
         Swap two genes in the array.
-        These genes are random selected.
+        These genes are randomly selected.
         */
         void mutation();
 
-        /*
-        Assign genes them to this chromosome.
-        This method do not copy genes.
-        If there is too many or not enough objects in the array then method
-        will not work and it will return true.
-        */
-        //bool set(ArrayType **genes, unsigned int &size);
-        //bool set(std::vector<ArrayType*> genes);
         void copy(const unsigned int &startPos, const unsigned int &endPos, const Chromosome<ArrayType> *from);
 
         unsigned int size() const;
@@ -66,7 +50,6 @@ namespace task_scheduling{
     };
 
 };
-
 
 
 #include "chromosome.cpp"
