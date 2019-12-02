@@ -80,40 +80,6 @@ std::pair<ChromosomeTL*, ChromosomeTL*> ChromosomeTL::crossover(const Chromosome
 
     return std::pair<ChromosomeTL*, ChromosomeTL*>(one, two);
     }
-/*
-void ChromosomeTL::set(const std::vector<Task*> &taskVector, bool mix){
-    #ifdef DEBUG
-    if(data.getNumberOfTasks() != chSize) throw std::runtime_error("Cannot set TL data. Wrong number of tasks.");
-    #endif
-
-    if(mix == false){
-        for (unsigned int i = 0; i < chSize; ++i){
-            genes[i] = taskVector[i];
-        }
-    } else{
-        // array with sorted sequential numbers
-        std::vector<unsigned int> index(chSize);
-        for (unsigned int i = 0; i < chSize; ++i){
-            index[i] = i;
-        }
-
-        int one, two, tmp;
-
-        // loop for swap
-        for (unsigned int i = 0; i < chSize; ++i){
-            one = randGene.getOpen();
-            two = randGene.getOpen();
-
-            tmp = index[one];
-            index[one] = index[two];
-            index[two] = tmp;
-        }
-
-        for (unsigned int i = 0; i < chSize; ++i){
-            genes[i] = taskVector[index[i]];
-        }
-    }
-}*/
 
 
 #endif //CHROMOSOMETL_CPP
