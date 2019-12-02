@@ -1,2 +1,2 @@
 # PSZT_JobShop
-Job Shop Scheduling Genetic Algorithm
+Task Scheduling Genetic Algorithm
