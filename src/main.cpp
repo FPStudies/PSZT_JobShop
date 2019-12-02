@@ -61,28 +61,6 @@ int main(int argc, char** argv)
     }
 
     cout << "Delay sum: " << container.delaySum() << endl;
-    
-    /*try{
-
-    }
-    catch(runtime_error &e){
-         cout << e.what() << endl;
-    }
-    catch (const char *&e){
-        cout << e << endl;
-    }*/
-
-    /*task_scheduling::ChromosomeTL tmp(4);
-    tmp.set(container, true);
-    cout << tmp <<endl;
-
-    tmp.mutation();
-    cout << "Mutation" << endl;*/
-
-    //ChromosomeTL *addr = &tmp;
-    //(addr->genes)[0] = (addr->genes)[1];
-
-    //cout << tmp <<endl;
 
     return 0;
 }
