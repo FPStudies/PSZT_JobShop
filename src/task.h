@@ -16,7 +16,7 @@ namespace task_scheduling{
         bool operator == (const Task &task);
         bool operator != (const Task &task);
         friend std::ostream& operator << (std::ostream& os, const Task& task){
-            os << task.durationTime << '\t' << task.deadline;
+            os << "dt: " << task.durationTime << '\t' << "d: " << task.deadline;
             return os;
         }
     };

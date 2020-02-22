@@ -1,0 +1,2 @@
+Opis
+Zaimplementować algorytm ewolucyjny planujący wykonanie N zadań na M procesorach w taki sposób aby suma opóźnień w wykonaniu była jak najmniejsza. Na jedno zadanie składa się: czas trwania T i deadline wykonania - wartość D. Obliczenia przerwać po pewnej liczbie generacji bez poprawy wyniku. WE: plik z listą zadań, liczba M procesorów. WY: harmonogram zadań i suma opóźnień. // Więcej info na http://home.elka.pw.edu.pl/~mmarkiew/2019-pszt.html

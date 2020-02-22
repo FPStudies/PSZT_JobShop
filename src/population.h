@@ -3,7 +3,9 @@
 
 #include <vector>
 
+#ifdef __linux__
 #include <bits/stdc++.h>
+#endif
 #include "chromosomeTL.h"
 #include "chromosomePL.h"
 #include "dataContainer.h"
@@ -117,6 +119,10 @@ namespace task_scheduling{
 
         bool checkData();
 
+        /*
+        RandLoops means how many loops will be used to randomize first population.
+        At least one should be enough but you can use more.
+        */
         void run(const unsigned int &randLoops);
     };
 

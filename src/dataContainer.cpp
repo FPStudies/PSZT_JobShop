@@ -36,6 +36,7 @@ bool DataContainer::prepareData(int &argc, char** argv){
 
     unsigned char flags = 0, txt;
 
+    // interpret the program`s arguments
     for (int i = 1; i < argc; ++i){
         int tmp = (int) argv[i][0];
 
@@ -59,8 +60,6 @@ bool DataContainer::prepareData(int &argc, char** argv){
         else{   // is a number
             m_processorsNumber = atoi(argv[i]);
             flags = flags | 2;
-
-
         }
     }
 

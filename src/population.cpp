@@ -37,7 +37,7 @@ Population::Individual::Individual(const Individual *other){
 }
 
 unsigned int Population::Individual::fitness(){
-    unsigned int processorSum[population->dataContainer->getNumberOfProcessors()];
+    unsigned int *processorSum = new unsigned int[population->dataContainer->getNumberOfProcessors()];
 
     if(delay_m != UINT_MAX) return delay_m;
 
@@ -58,6 +58,7 @@ unsigned int Population::Individual::fitness(){
             delay_m += tmpProc - tl_m->getPointerToGene(i)->deadline;
         }
     }
+    delete[] processorSum;
 
     return delay_m;
 }
@@ -312,7 +313,7 @@ void Population::MatingPool::tournament(Individual **oldNewGeneration){
 
     for(unsigned int i = 2; i < matingPoolSize; ++i){
         tournamentSize = Rand::getOpen(1, population->populationSize);
-        Individual *eliminations[tournamentSize];
+        Individual **eliminations = new Individual*[tournamentSize];
 
         // choose individuals to compete with each other
         for(unsigned int j = 0; j < tournamentSize; ++j){
@@ -330,6 +331,7 @@ void Population::MatingPool::tournament(Individual **oldNewGeneration){
 
         // now add the best to mating pool
         pool[i] = eliminations[pos];
+        delete[] eliminations;
     }
 }
 
