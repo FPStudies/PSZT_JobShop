@@ -21,3 +21,5 @@ Finally, it displays the sum of delays, which means how much time has elapsed fr
 
 ###### Details
 Program was written in C++ based on compiler version 11 or higher.
+
+Program was based on work of https://www.ijeat.org/wp-content/uploads/papers/v3i2/B2337123213.pdf?fbclid=IwAR2-kA-EXHTsgbEnGUKI85XgFWoopB0_zjtnstP8W6R0Npz_LncgKaqwE_A.
