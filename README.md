@@ -4,6 +4,8 @@
 ###### How to use
 Program has hard coded some properties which you can change in main file. Some of the values were precisely selected to maximize chance of getting optimal solution. Other values are depentend on the type of problem you want to run. More information inside main file.
 
+Program can be compiled via Visual Studio or Makefile (in src directory).
+
 
 ###### Program`s arguments 
 (order does not matter, file name at his first character must not be a number)
@@ -17,6 +19,7 @@ Firstly it prints out all tasks information from file.
 - d - deadline
 
 Secondly it prints out which tasks on which processor should be run and in what order.
+
 Finally, it displays the sum of delays, which means how much time has elapsed from task`s deadline.
 
 
