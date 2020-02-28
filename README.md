@@ -4,7 +4,7 @@
 ###### How to use
 Program has hard coded some properties which you can change in main file. Some of the values were precisely selected to maximize chance of getting optimal solution. Other values are depentend on the type of problem you want to run. More information inside main file.
 
-Program can be compiled via Visual Studio or Makefile (in src directory).
+Program can be compiled via Visual Studio for Windows or Makefile for Linux (in src directory).
 
 
 ###### Program`s arguments 
