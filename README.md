@@ -15,6 +15,7 @@ Program has hard coded some properties which you can change in main file. Some o
 Firstly it prints out all tasks information from file. 
 - dt - duration time
 - d - deadline
+
 Secondly it prints out which tasks on which processor should be run and in what order.
 Finally, it displays the sum of delays, which means how much time has elapsed from task`s deadline.
 
